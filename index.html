@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/bef2d53857.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="Sass/main.css" />
     <title>Figma Abdumalik</title>
   </head>
   <body>
-    <header>
+    <header class="container">
       <nav class="navbar">
         <div class="nav_left">
           <div class="circle"></div>
           <h2>Logo</h2>
         </div>
         <div class="nav_right">
+          <i class="fa-solid fa-bars"></i>
           <ul>
             <li><a href="#About">About</a></li>
             <li><a href="#Services">Services</a></li>
@@ -46,39 +52,41 @@
     </header>
     <main>
       <section class="Services">
-        <div class="Services_left">
-          <h3>Wellbeing is welldoing</h3>
-          <div class="Services_table">
-            <div class="Services_table_cards">
-              <div class="Services_icon">
-                <img src="./images/Icon.png" alt="icon" />
+        <div class="Services_section container">
+          <div class="Services_left">
+            <h3>Wellbeing is welldoing</h3>
+            <div class="Services_table">
+              <div class="Services_table_cards">
+                <div class="Services_icon">
+                  <img src="./images/barg.svg" alt="icon" />
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Quam ut consequat at
+                  a. Diam lacus platea orci vel elit.
+                </p>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a.
-                Diam lacus platea orci vel elit.
-              </p>
-            </div>
-            <div class="Services_table_cards">
-              <div class="Services_icon">
-                <img src="./images/Icon.png" alt="icon" />
+              <div class="Services_table_cards">
+                <div class="Services_icon">
+                  <img src="./images/barg.svg" alt="icon" />
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Quam ut consequat at
+                  a. Diam lacus platea orci vel elit.
+                </p>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a.
-                Diam lacus platea orci vel elit.
-              </p>
             </div>
           </div>
-        </div>
-        <div class="Services_right">
-          <img src="./images/Main_img_1.png" alt="main_img_1" />
+          <div class="Services_right">
+            <img src="./images/Main_img_1.png" alt="main_img_1" />
+          </div>
         </div>
       </section>
-      <section class="info">
+      <section class="info container">
         <div class="info_left">
           <img src="./images/Main_img_2.png" alt="main_img_2" />
         </div>
         <div class="info_right">
-          <div class="info_left">
+          <div class="info_top">
             <h2>Fresh organic produce</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a.
@@ -90,7 +98,7 @@
           <div class="info_bottom">
             <div class="info_bottom_child">
               <div class="info_img">
-                <img src="./images/Icon.png" alt="icon" />
+                <img src="./images/flowers.svg" alt="icon" />
               </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a.
@@ -99,7 +107,7 @@
             </div>
             <div class="info_bottom_child">
               <div class="info_img">
-                <img src="./images/Icon.png" alt="icon" />
+                <img src="./images/flowers.svg" alt="icon" />
               </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a.
@@ -108,7 +116,7 @@
             </div>
             <div class="info_bottom_child">
               <div class="info_img">
-                <img src="./images/Icon.png" alt="icon" />
+                <img src="./images/flowers.svg" alt="icon" />
               </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a.
@@ -119,7 +127,7 @@
         </div>
       </section>
       <section class="Team">
-        <div class="Team_section">
+        <div class="Team_section container">
           <div class="Team_left">
             <div class="Team_img">
               <img src="./images/Main_img_3.png" alt="Main_img_3" />
@@ -130,7 +138,7 @@
             <div class="Team_table">
               <div class="Team_table_cards">
                 <div class="Team_icon">
-                  <img src="./images/Icon.png" alt="icon" />
+                  <img src="./images/Barg_q.png" alt="icon" />
                 </div>
                 <p>
                   Lorem ipsum dolor sit amet consectetur. Quam ut consequat at
@@ -139,7 +147,7 @@
               </div>
               <div class="Team_table_cards">
                 <div class="Team_icon">
-                  <img src="./images/Icon.png" alt="icon" />
+                  <img src="./images/Barg_q.png" alt="icon" />
                 </div>
                 <p>
                   Lorem ipsum dolor sit amet consectetur. Quam ut consequat at
@@ -150,11 +158,11 @@
           </div>
         </div>
       </section>
-      <section class="Contact">
+      <section class="Contact container">
         <div class="Contact_section">
           <div class="Contact_top">
             <div class="Contact_img">
-              <img src="./images/Icon.png" alt="icon" />
+              <img src="./images/Barg_oq.svg" alt="icon" />
             </div>
             <h3>Wellbeing starts with welldoing</h3>
             <p>
@@ -164,6 +172,7 @@
             </p>
             <button>Join now</button>
           </div>
+          <section></section>
           <div class="Contact_bottom">
             <div class="Contact_Feature">
               <div class="Feature_img">
@@ -192,8 +201,8 @@
           </div>
         </div>
       </section>
-      <footer>
-        <div class="footer">
+      <footer class="footer">
+        <div class="footer_section container">
           <div class="footer_top">
             <div class="footer_left">
               <div class="circle"></div>
