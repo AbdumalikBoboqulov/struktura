@@ -1,7 +1,8 @@
 .footer {
   background-color: $color-btn;
-  position: relative;
-  top: 800px;
+  //   position: relative;
+  //   top: 700px;
+  margin-top: 650px;
   padding: 78px 0;
   .footer_section {
     @include flex;
@@ -54,8 +55,9 @@
 @media screen and (min-width: 640px) {
   .footer {
     background-color: $color-btn;
-    position: relative;
-    top: 380px;
+    // position: relative;
+    // top: 380px;
+    margin-top: 250px;
     padding: 78px 0;
     .footer_section {
       @include flex;
@@ -111,8 +113,9 @@
   }
   .footer {
     background-color: $color-btn;
-    position: relative;
-    top: 280px;
+    // position: relative;
+    // top: 180px;
+    margin-top: 250px;
     padding: 78px 0;
     .footer_section {
       @include flex;
@@ -124,6 +127,37 @@
       align-items: center;
       justify-content: space-between;
       gap: 72.8rem;
+
+      .footer_left {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        h3 {
+          font-size: 2.1rem;
+          font-weight: 600;
+          color: $color-FFF;
+        }
+      }
+      .footer_right {
+        // margin-top: ;
+        ul {
+          display: flex;
+
+          font-size: 1.6rem;
+          a {
+            color: $color-FFF;
+          }
+        }
+      }
+    }
+    .footer_bottom {
+      display: flex;
+      gap: 2.4rem;
+      margin-top: 36px;
+      i {
+        font-size: 2.7rem;
+        color: white;
+      }
     }
   }
 }

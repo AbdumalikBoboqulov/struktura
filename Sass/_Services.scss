@@ -95,17 +95,28 @@
     margin: 0 auto;
   }
   .Services {
+    margin-bottom: 0;
+    padding-bottom: 0;
     background-color: $bcgk-main;
     // margin-top: 36px;
     .Services_section {
       display: flex;
       align-items: center;
       gap: 19.1rem;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      align-items: end;
     }
 
     .Services_left {
+      padding-bottom: 70px;
+      h3 {
+        padding-bottom: 20px;
+        padding-top: 50px;
+      }
       .Services_table {
         padding-bottom: 0;
+        margin-bottom: 0;
         .Services_table_cards {
           display: flex;
           align-items: start;
@@ -117,8 +128,11 @@
       }
     }
     .Services_right {
+      padding-bottom: 0;
+      margin-bottom: 0;
       img {
         display: flex;
+        align-items: end;
       }
     }
   }

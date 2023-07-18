@@ -295,15 +295,28 @@ html {
     margin: 0 auto;
   }
   .Services {
+    margin-bottom: 0;
+    padding-bottom: 0;
     background-color: #f4f4f4;
   }
   .Services .Services_section {
     display: flex;
     align-items: center;
     gap: 19.1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    align-items: end;
+  }
+  .Services .Services_left {
+    padding-bottom: 70px;
+  }
+  .Services .Services_left h3 {
+    padding-bottom: 20px;
+    padding-top: 50px;
   }
   .Services .Services_left .Services_table {
     padding-bottom: 0;
+    margin-bottom: 0;
   }
   .Services .Services_left .Services_table .Services_table_cards {
     display: flex;
@@ -313,8 +326,13 @@ html {
     text-align: start;
     max-width: 260px;
   }
+  .Services .Services_right {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
   .Services .Services_right img {
     display: flex;
+    align-items: end;
   }
 }
 .info {
@@ -576,8 +594,9 @@ html {
   background: url(../images/Main_telefon.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: center;
+  padding-top: 71px;
   position: relative;
-  height: 100vh;
 }
 .Contact .Contact_section {
   display: flex;
@@ -592,13 +611,14 @@ html {
   text-align: center;
   justify-content: center;
   gap: 1.3rem;
-  padding: 250px 62px 110px;
+  padding: 10px 62px 110px;
 }
 .Contact .Contact_section .Contact_top h3 {
   font-size: 2.1rem;
   font-weight: 600;
   line-height: 31px;
   color: #fff;
+  max-width: 236px;
 }
 .Contact .Contact_section .Contact_top p {
   display: none;
@@ -631,7 +651,8 @@ html {
   width: 90%;
   border-radius: 12px;
   position: absolute;
-  top: 500px;
+  transform: translateY(30px);
+  top: 300px;
 }
 .Contact .Contact_section .Contact_bottom .Contact_Feature {
   display: flex;
@@ -651,6 +672,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 46px;
   justify-content: center;
 }
 
@@ -665,7 +687,6 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    height: 100vh;
   }
   .Contact .Contact_section {
     display: flex;
@@ -680,7 +701,8 @@ html {
     text-align: center;
     justify-content: center;
     gap: 1.3rem;
-    padding: 200px 62px 110px;
+    padding: 10px 62px 110px;
+    padding-bottom: 250px;
   }
   .Contact .Contact_section .Contact_top img {
     width: 92px;
@@ -690,6 +712,7 @@ html {
     font-weight: 600;
     line-height: 36px;
     color: #fff;
+    max-width: 640px;
   }
   .Contact .Contact_section .Contact_top p {
     display: block;
@@ -722,12 +745,13 @@ html {
   .Contact .Contact_section .Contact_bottom {
     background-color: #ebbfae;
     display: grid;
-    grid-template-columns: repeat(1, auto);
+    grid-template-columns: repeat(2, auto);
     gap: 22.7rem;
     row-gap: 49px;
     position: absolute;
     max-width: 90%;
-    top: 600px;
+    top: 520px;
+    transform: translateY(-80px);
   }
   .Contact .Contact_section .Contact_bottom .Contact_Feature {
     display: flex;
@@ -761,7 +785,6 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    height: 100vh;
   }
   .Contact .Contact_section {
     margin-top: 100px;
@@ -773,7 +796,9 @@ html {
     text-align: center;
     justify-content: center;
     gap: 1.3rem;
-    padding: 280px 62px 110px;
+    padding: 0 62px 110px;
+    margin-top: -95px;
+    padding-bottom: 250px;
   }
   .Contact .Contact_section .Contact_bottom {
     grid-template-columns: repeat(4, auto);
@@ -783,7 +808,7 @@ html {
     row-gap: 49px;
     position: absolute;
     max-width: 90%;
-    top: 750px;
+    top: 530px;
   }
   .Contact .Contact_section .Contact_bottom .Contact_Feature {
     display: flex;
@@ -793,8 +818,7 @@ html {
 }
 .footer {
   background-color: #285e67;
-  position: relative;
-  top: 800px;
+  margin-top: 650px;
   padding: 78px 0;
 }
 .footer .footer_section {
@@ -846,8 +870,7 @@ html {
 @media screen and (min-width: 640px) {
   .footer {
     background-color: #285e67;
-    position: relative;
-    top: 380px;
+    margin-top: 250px;
     padding: 78px 0;
   }
   .footer .footer_section {
@@ -899,8 +922,7 @@ html {
   }
   .footer {
     background-color: #285e67;
-    position: relative;
-    top: 280px;
+    margin-top: 250px;
     padding: 78px 0;
   }
   .footer .footer_section {
@@ -914,6 +936,32 @@ html {
     align-items: center;
     justify-content: space-between;
     gap: 72.8rem;
+  }
+  .footer .footer_top .footer_left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .footer .footer_top .footer_left h3 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  .footer .footer_top .footer_right ul {
+    display: flex;
+    font-size: 1.6rem;
+  }
+  .footer .footer_top .footer_right ul a {
+    color: #fff;
+  }
+  .footer .footer_bottom {
+    display: flex;
+    gap: 2.4rem;
+    margin-top: 36px;
+  }
+  .footer .footer_bottom i {
+    font-size: 2.7rem;
+    color: white;
   }
 }
 
